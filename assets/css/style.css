@@ -1,0 +1,701 @@
+/* ? Fonts */
+
+@font-face {
+    font-family: Circular Std;
+    src: url("../fonts/circular-std-medium-500.ttf");
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: Calibre;
+    src: url("../fonts/CalibreRegular.otf");
+}
+
+/* ? Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --background-color: #fff;
+}
+
+/* ! Main page */
+
+.personal {
+    width: 100%;
+    height: 37.5rem;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.pattern-pers {
+    position: absolute;
+    left: 3%;
+    top: 0.3%;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-personal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "per profile"
+        "per profile"
+        "per profile";
+    gap: 7.12rem;
+}
+
+.personal-information {
+    margin-top: 10.12rem;
+    grid-area: per;
+    display: grid;
+    gap: 4.94rem;
+}
+
+.wel-about {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.hi-text {
+    color: #000;
+
+    font-family: Circular Std;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+}
+
+.info-text {
+    color: #0a0a14;
+    font-family: Circular Std;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03125rem;
+}
+
+.sub-text {
+    font-style: italic;
+}
+
+.w-about-text {
+    color: #000;
+    font-family: Circular Std;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.work-about-purple {
+    color: #af0c48;
+}
+
+.profile {
+    grid-area: profile;
+    margin-top: 10.62rem;
+}
+
+.profile img {
+    filter: drop-shadow(-14px -11px 5px rgba(168, 21, 162, 0.84));
+}
+
+/* ! App info section */
+
+.app-info {
+    width: 100%;
+    height: 55rem;
+}
+
+.container-app-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.75rem;
+    grid-template-rows: 1;
+    grid-template-areas: "calendar aksestani";
+}
+
+.card1 {
+    display: grid;
+    width: 31.375rem;
+    height: 40.5rem;
+    border-radius: 0.1875rem;
+    background: #ddeefe;
+    grid-area: calendar;
+    margin-top: 6.25rem;
+}
+
+.contains {
+    display: grid;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    gap: 2rem 1.94rem;
+}
+
+.card-description {
+    display: grid;
+    gap: 0.94rem;
+}
+
+.card-link {
+    margin-top: 2rem;
+}
+
+.card-image {
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.card2 {
+    border-radius: 0.1875rem;
+    background: #d9f6f1;
+    width: 31.375rem;
+    height: 40.5rem;
+    grid-area: aksestani;
+    margin-top: 6.25rem;
+}
+
+/* ! TEXT */
+
+.card-head {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09063rem;
+}
+
+.card-desc {
+    color: #000;
+
+    font-family: Circular Std;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    width: 26.375rem;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #000;
+    font-family: Circular Std;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+/* ! APP WORKS */
+
+.app-works {
+    height: 43rem;
+    width: 100%;
+}
+
+.container-app-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 10% 90%;
+    grid-template-areas:
+        "Headingtext"
+        "Content";
+    gap: 1.88rem;
+}
+
+.app-works-main-container {
+    grid-area: Content;
+    display: grid;
+    grid-template-columns: 20% 30% auto auto auto;
+    grid-template-rows: 7% 10% auto auto auto;
+}
+
+.main-image-appw {
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+.main-desc-appw {
+    width: 29.3125rem;
+    height: 14.3125rem;
+    border-radius: 0.1875rem;
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.09);
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+}
+
+.appw-text-content {
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.31rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.project-n-d {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.project-c-a {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* ! APP WORKS TEXT */
+
+.works-header {
+    grid-area: Headingtext;
+    color: #0a0a14;
+    font-family: Circular Std;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 2.8125rem */
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+.project-heading {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09063rem;
+}
+
+.startup-text {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+}
+
+.project-descr {
+    width: 26.375rem;
+    color: #000;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.project-heading-client {
+    color: #000;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: #000;
+    font-family: Calibre;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+/* ! THIRD PAGE */
+
+.thirth-page {
+    position: relative;
+    width: 100%;
+    height: 51.875rem;
+}
+
+.pattern1 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+
+}
+
+.pattern2 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+
+.container-activites {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 30% 30% auto;
+    grid-template-areas:
+        "firstline firstline firstline firstline firstline"
+        "second second second second second";
+    gap: 1.81rem 3.12rem;
+}
+
+/* ! Grids template */
+
+.activites-first-line {
+    grid-area: firstline;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.activites-head {
+    width: 43.4375rem;
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 2.8125rem */
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    padding-top: 6.25rem;
+}
+
+.activites-desc-head {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15625rem;
+}
+
+/* ! Second Line */
+
+.activites-second-line {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-area: second;
+}
+
+.image-secondcontainer {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.image-secondcontainer img {
+    filter: drop-shadow(-7px 11px 5px rgba(168, 21, 162));
+}
+
+.zone-text {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    gap: 1.25rem 1.5rem;
+}
+
+.second-line1 {
+    display: grid;
+    gap: 0.62rem;
+}
+
+.secondline-span {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09063rem;
+}
+
+.secondline-par {
+    width: 30.625rem;
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.second-line2 {
+    display: grid;
+    gap: 0.62rem;
+}
+
+.secondline-span2 {
+    width: 30.625rem;
+    color: #7D7D8D;
+    font-family: Calibre;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.secondline-ul li {
+    color: #B21AA1;
+}
+
+.secondline-ul li span {
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.second-line3 {
+    display: grid;
+}
+
+.second-line3 a {
+    text-decoration: none;
+    color: #000;
+    font-family: Calibre;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+/* ! Three content */
+
+.activites-three-line {
+    grid-column: 3 / -1;
+}
+
+.three-first {
+    display: grid;
+    gap: 2.75rem;
+}
+
+.three-content {
+    display: grid;
+    gap: 0.62rem;
+}
+
+.explain {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09063rem;
+}
+
+.explain-desc {
+    color: #0A0A14;
+    width: 30.625rem;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+}
+
+.explain-href a {
+    text-decoration: none;
+    color: #000;
+    font-family: Calibre;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+/* ! FOUR PAGE */
+
+.four-page {
+    width: 100%;
+    height: 17.125rem;
+}
+
+.container-contact {
+    display: grid;
+    height: 17.125rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 50% 10% 20%;
+}
+
+.four-content1 {
+    width: 33.75rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 4.6875rem */
+    letter-spacing: 0.03125rem;
+}
+
+.four-content2 {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+}
+
+.four-content2 a {
+    color: #AF0C48;
+    font-family: Calibre;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+    text-decoration-line: underline;
+}
+
+/* ! Footer */
+
+.main-foot {
+    height: 14.1875rem;
+    width: 100%;
+}
+
+.container-main-foot {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 9% 20% 12% 10% 7% 5% 5% 5% 5%;
+    grid-template-rows: 45% 10% 45%;
+}
+
+.username {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+}
+
+.ty-message {
+    grid-column: 2 / 3;
+    text-align: center;
+    grid-row: 2 / 3;
+    width: 9.125rem;
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+}
+
+.pers-blog-li {
+    color: #0A0A14;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+    grid-column: 6 / 7;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+.dribble-li {
+    grid-column: 7 / 8;
+    color: #EA4C89;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.01125rem;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+.medium-li {
+    color: #00AB6B;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+    grid-column: 8 / 9;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+.behance-li {
+    color: #1769FF;
+    text-align: center;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+    grid-column: 9 / 10;
+    grid-row: 2 / 3;
+}
+
+.linkedin-li {
+    color: #0077B5;
+    text-align: center;
+    font-family: Calibre;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+    grid-column: 10 / 11;
+    grid-row: 2 / 3;
+}
